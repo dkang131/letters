@@ -1,0 +1,28 @@
+services:
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+
+    env_file:
+      - ./backend/.env
+
+    expose:
+      - "8000"
+
+    restart: unless-stopped
+
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    ports:
+      - "5816:80"
+
+    depends_on:
+      - backend
+
+    restart: unless-stopped
