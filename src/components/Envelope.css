@@ -451,7 +451,7 @@
     width: 84%;
     left: 8%;
 
-    height: 68%;
+    height: 70%;
   }
 
   .letter-page {
@@ -459,22 +459,22 @@
   }
 
   .letter-page h2 {
-    font-size: 24px;
+    font-size: 18px;
 
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   .letter-page p {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .letter-navigation {
-    bottom: 12px;
+    bottom: 10px;
   }
 
   .letter-navigation button {
     padding: 6px 10px;
 
-    font-size: 13px;
+    font-size: 8px;
   }
 }
